@@ -118,7 +118,7 @@ export default function BikiProductionLanding() {
                 data-testid="cta-youtube"
                 href={LINKS.youtubeChannel}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-amber-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-amber-700"
               >
                 <PlayCircle className="h-4 w-4" /> Watch on YouTube
@@ -180,7 +180,7 @@ export default function BikiProductionLanding() {
               data-testid="watch-youtube-link"
               href={LINKS.youtubeChannel}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-700 hover:underline dark:text-emerald-400"
             >
               Go to YouTube <ExternalLink className="h-4 w-4" />
@@ -193,7 +193,7 @@ export default function BikiProductionLanding() {
                 key={i}
                 href={`${LINKS.youtubeChannel.replace(/\/$/, "")}/videos`}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="group overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-700 dark:bg-zinc-900/60"
               >
                 <AspectVideo>
@@ -216,7 +216,7 @@ export default function BikiProductionLanding() {
               <a
                 href={LINKS.youtubeChannel}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1.5 text-sm hover:bg-white dark:border-zinc-700 dark:bg-zinc-800/60 dark:text-zinc-100 dark:hover:bg-zinc-800"
               >
                 <Youtube className="h-4 w-4" /> YouTube
@@ -225,7 +225,7 @@ export default function BikiProductionLanding() {
                 data-testid="social-x"
                 href={LINKS.twitter}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1.5 text-sm hover:bg-white dark:border-zinc-700 dark:bg-zinc-800/60 dark:text-zinc-100 dark:hover:bg-zinc-800"
               >
                 <Twitter className="h-4 w-4" /> X
@@ -234,7 +234,7 @@ export default function BikiProductionLanding() {
                 data-testid="social-instagram"
                 href={LINKS.instagram}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1.5 text-sm hover:bg-white dark:border-zinc-700 dark:bg-zinc-800/60 dark:text-zinc-100 dark:hover:bg-zinc-800"
               >
                 <Instagram className="h-4 w-4" /> Instagram
@@ -261,7 +261,8 @@ export default function BikiProductionLanding() {
                 }
               }}
             >
-              <input type="email" required placeholder="Your email address" className="h-10 w-full rounded-md border border-zinc-300 px-3 text-sm sm:max-w-xs dark:border-zinc-600 dark:bg-zinc-900/60" />
+              <label htmlFor="newsletter-email" className="sr-only">Email address</label>
+              <input id="newsletter-email" name="email" type="email" required placeholder="Your email address" className="h-10 w-full rounded-md border border-zinc-300 px-3 text-sm sm:max-w-xs dark:border-zinc-600 dark:bg-zinc-900/60" />
               <button type="submit" className="h-10 rounded-md bg-emerald-700 px-4 text-sm font-semibold text-white hover:bg-emerald-800">Subscribe</button>
             </form>
           </div>
@@ -290,16 +291,16 @@ export default function BikiProductionLanding() {
             }}
           >
             <div className="sm:col-span-1">
-              <label className="mb-1 block text-sm font-medium">Name</label>
-              <input className="h-10 w-full rounded-md border border-zinc-300 px-3 text-sm dark:border-zinc-600 dark:bg-zinc-900/60" placeholder="Your name" required />
+              <label htmlFor="contact-name" className="mb-1 block text-sm font-medium">Name</label>
+              <input id="contact-name" name="name" className="h-10 w-full rounded-md border border-zinc-300 px-3 text-sm dark:border-zinc-600 dark:bg-zinc-900/60" placeholder="Your name" required />
             </div>
             <div className="sm:col-span-1">
-              <label className="mb-1 block text-sm font-medium">Email</label>
-              <input type="email" className="h-10 w-full rounded-md border border-zinc-300 px-3 text-sm dark:border-zinc-600 dark:bg-zinc-900/60" placeholder="you@example.com" required />
+              <label htmlFor="contact-email" className="mb-1 block text-sm font-medium">Email</label>
+              <input id="contact-email" name="email" type="email" className="h-10 w-full rounded-md border border-zinc-300 px-3 text-sm dark:border-zinc-600 dark:bg-zinc-900/60" placeholder="you@example.com" required />
             </div>
             <div className="sm:col-span-2">
-              <label className="mb-1 block text-sm font-medium">Message</label>
-              <textarea className="w-full rounded-md border border-zinc-300 px-3 py-2 text-sm dark:border-zinc-600 dark:bg-zinc-900/60" rows={5} placeholder="Your message..." required />
+              <label htmlFor="contact-message" className="mb-1 block text-sm font-medium">Message</label>
+              <textarea id="contact-message" name="message" className="w-full rounded-md border border-zinc-300 px-3 py-2 text-sm dark:border-zinc-600 dark:bg-zinc-900/60" rows={5} placeholder="Your message..." required />
             </div>
             <div className="sm:col-span-2">
               <button type="submit" className="inline-flex items-center gap-2 rounded-md bg-emerald-700 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-800">
