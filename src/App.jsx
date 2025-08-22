@@ -90,7 +90,7 @@ export default function BikiProductionLanding() {
               </div>
               <div>
                 <div className="text-base font-extrabold tracking-tight">BIKI PRODUCTION</div>
-                <div className="text-xs text-zinc-500 dark:text-zinc-400">Politics • Culture • Sports — Horn of Africa</div>
+                  <div className="text-xs text-zinc-500 dark:text-zinc-400">Politics • Culture • Sports — The Horn of Africa</div>
               </div>
             </div>
 
@@ -246,8 +246,8 @@ export default function BikiProductionLanding() {
         {/* Subscribe */}
         <section id="subscribe" className="mx-auto max-w-6xl px-4 py-12">
           <div className="rounded-2xl border border-zinc-200 bg-gradient-to-r from-amber-100 to-emerald-100 p-6 dark:border-zinc-700 dark:from-zinc-800 dark:to-zinc-900">
-            <h3 className="text-xl font-bold">Subscribe for new episodes</h3>
-            <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Monthly email with podcast drops and highlights.</p>
+              <h3 className="text-xl font-bold">Subscribe for new episodes</h3>
+              <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Monthly emails with podcast releases and highlights.</p>
             <form
               ref={newsletterFormRef}
               method="post"
@@ -255,7 +255,7 @@ export default function BikiProductionLanding() {
               onSubmit={(e) => {
                 if (LINKS.newsletterAction === "#") {
                   e.preventDefault();
-                  alert("Replace newsletterAction with your email service URL.");
+                    alert("Replace newsletterAction with the URL of your email service.");
                 } else {
                   e.currentTarget.setAttribute("action", LINKS.newsletterAction);
                 }
@@ -272,22 +272,22 @@ export default function BikiProductionLanding() {
         <section id="about" className="mx-auto max-w-6xl px-4 py-12">
           <h2 className="text-2xl font-bold">About BIKI PRODUCTION</h2>
           <p className="mt-2 max-w-3xl text-zinc-700 dark:text-zinc-300">
-            We spotlight the politics and rich cultural heritage of the Horn of Africa —
-            exploring current affairs, historical perspectives, sports, and cultural narratives.
-            Join us for meaningful conversations about the region's future.
+              We spotlight the politics and rich cultural heritage of the Horn of Africa by
+              exploring current affairs, historical perspectives, sports, and cultural narratives.
+              Join us for meaningful conversations about the region's future.
           </p>
         </section>
 
         {/* Contact */}
         <section id="contact" className="mx-auto max-w-6xl px-4 py-12">
           <h2 className="text-2xl font-bold">Contact</h2>
-          <p className="mt-2 text-zinc-700 dark:text-zinc-300">For collaborations, press, and sponsorships.</p>
+            <p className="mt-2 text-zinc-700 dark:text-zinc-300">For collaborations, press inquiries, and sponsorships.</p>
           <form
             ref={contactFormRef}
             className="mt-4 grid gap-3 sm:grid-cols-2"
             onSubmit={(e) => {
               e.preventDefault();
-              alert("Hook this form to your email service or backend.");
+                alert("Connect this form to your email service or backend.");
             }}
           >
             <div className="sm:col-span-1">
