@@ -90,7 +90,7 @@ export default function BikiProductionLanding() {
               </div>
               <div>
                 <div className="text-base font-extrabold tracking-tight">BIKI PRODUCTION</div>
-                <div className="text-xs text-zinc-500 dark:text-zinc-400">Politics • Culture • Sports — Horn of Africa</div>
+                <div className="text-xs text-zinc-500 dark:text-zinc-400">Politics • Culture • History — The Horn of Africa</div>
               </div>
             </div>
 
